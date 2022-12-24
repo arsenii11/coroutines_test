@@ -3,8 +3,12 @@ import kotlin.random.Random
 
 fun main(): Unit = runBlocking {
     launch {
-        delay(1000L)
-        println("World")
+    doWorld()
     }
     println("Hello")
+}
+
+suspend fun doWorld(){
+    delay(2000L)
+    println("World")
 }
