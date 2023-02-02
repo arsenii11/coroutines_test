@@ -6,6 +6,11 @@ import java.util.*
 import kotlin.math.*
 
 fun main() {
+    randomCycle()
+}
+
+
+fun randomCycle(){
     try {
 
         var n: Int = readln().toInt()
@@ -21,7 +26,6 @@ fun main() {
         println("ERROR:$e")
     }
 }
-
 
 
 
