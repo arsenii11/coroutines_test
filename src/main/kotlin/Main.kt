@@ -1,13 +1,14 @@
+
 import kotlinx.coroutines.delay
 import java.util.*
-import kotlin.math.*
+import kotlin.math.pow
 
 fun main() {
     //randomCycle()
     val numbers = Numbers()
     val calculations = Calculations()
-    println(numbers.twoPlusRand())
-    println(calculations.twoPlusRand())
+    println(numbers.twoPlusRand(null))
+    println(calculations.twoPlusRand(null))
 
 }
 
@@ -31,7 +32,7 @@ fun randomCycle(){
 }
 
 open class Numbers(){
-     open fun twoPlusRand():Int {
+     open fun twoPlusRand(n:Int?):Int {
         val num =  2 + kotlin.random.Random.nextInt(0,300)
          return num
     }
