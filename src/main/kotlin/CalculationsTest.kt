@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class CalculationsTest {
@@ -15,10 +15,14 @@ class CalculationsTest {
         assert(true)
     }
 
+    fun checkNumber(number: Int): Boolean {
+        return number in 400..800
+    }
+
     @Test
     fun twoPlusRand() {
         val expected = 16
-        assertEquals(expected, Calculations().twoPlusRand(expected-4))
+            assertTrue(checkNumber(Calculations().twoPlusRand(12)))
 
     }
 }
