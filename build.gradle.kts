@@ -17,6 +17,16 @@ dependencies {
     implementation("org.junit.jupiter:junit-jupiter:5.8.1")
     testImplementation (kotlin("org.junit.jupiter:junit-jupiter-api:5.7.1"))
     testRuntimeOnly (kotlin("org.junit.jupiter:junit-jupiter-engine:5.7.1"))
+
+    //Hilt
+    implementation ("com.google.dagger:hilt-android:2.44.2")
+    annotationProcessor ("com.google.dagger:hilt-compiler:2.44.2")
+
+    //Dagger 2
+    implementation ("com.google.dagger:dagger-android:2.x")
+    implementation ("com.google.dagger:dagger-android-support:2.x")
+    annotationProcessor ("com.google.dagger:dagger-android-processor:2.x")
+    annotationProcessor ("com.google.dagger:dagger-compiler:2.x")
 }
 
 tasks.test {
